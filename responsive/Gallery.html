@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Picture Gallery</title>
+  <link rel="stylesheet" href="unquie.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+
+</head>
+<body>
+
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="./index.html">
+        Home
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" onclick="toggleMenu()">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="About me.html">About</a>
+        <a class="navbar-item" href="Project.html">Projects</a>
+        <a class="navbar-item" href="ContactMe.html">Contact</a>
+        <a class="navbar-item" href="Gallery.html">Gallery</a>
+      </div>
+    </div>
+  </nav>
+  <section class="hero is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title has-text-centered">Gallery</h1>
+      </div>
+    </div>
+  </section>
+
+
+<div class="content">
+  <h1 class="title has-text-centered">My Picture Gallery</h1>
+  <p class="has-text-centered">A collection of random pictures for your enjoyment.</p>
+  <hr>
+
+  <!-- Picture Gallery -->
+  <section class="section">
+    <div class="container image-stack">
+      <img src="Gallery/GREENFN.jpg" alt="Picture 1" class="image" width="300">
+      <img src="Gallery/otherwise.jpg" alt="Picture 2" class="image" width="300">
+      <img src="Gallery/STOP.JPG" alt="Picture 3" class="image" width="300">
+      <img src="Gallery/praying.jpg" alt="Picture 4" class="image" width="300">
+      <img src="Gallery/damn.JPG" alt="Picture 5" class="image" width="300">
+      <img src="Gallery/wait.JPG" alt="Picture 5" class="image" width="300">
+      <img src="Gallery/Talk.JPG" alt="Picture 5" class="image" width="300">
+
+    </div>
+  </section>
+
+  <p class="has-text-centered"><a href="./index.html"><button class="home-button">Back to Home</button></a></p>
+</div>
+
+<script>
+  function toggleMenu() {
+    const navbarMenu = document.getElementById('navbarMenu');
+    navbarMenu.classList.toggle('is-active');
+  }
+</script>
+
+</body>
+</html>

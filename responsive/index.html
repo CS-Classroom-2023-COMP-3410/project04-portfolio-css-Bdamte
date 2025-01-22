@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to My Web Page!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="unquie.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+  <style>
+
+  .card {
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    z-index: 1;
+  }
+
+  .card-header, .card-content {
+    position: relative;
+    z-index: 2;
+  }
+  .card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Gallery/top500.png') no-repeat center center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: 0;
+  }
+    
+  </style>
+  
+</head>
+<body>
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="./index.html">
+        Home
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" onclick="toggleMenu()">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="About me.html">About</a>
+        <a class="navbar-item" href="Project.html">Projects</a>
+        <a class="navbar-item" href="ContactMe.html">Contact</a>
+        <a class="navbar-item" href="Gallery.html">Gallery</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title has-text-centered">Welcome To My Page</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="columns">
+      <div class="column is-one-third">
+        <div class="card has-background">
+          <div class="card-background"></div>
+          <header class="card-header">
+            <p class="card-header-title">
+              Fun Facts
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <ol>
+                <li>I am Ethiopian</li>
+                <li>I reached top 500 in Overwatch competitive</li>
+                <li>I love collecting DVD sets of my favorite cartoon shows</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="column is-one-third">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            Who am I?
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <p>Yo! I'm <strong>Biruk</strong>, and this is my very first webpage about ME!</p>
+            <h3 class="subtitle is-5">Here is a picture of my favorite game:</h3>
+            <img src="Gallery/ow1.jpg" alt="Overwatch" class="image is-128x128">
+            <p>This game is called Overwatch, and it is my favorite game. Here is a <a href="https://overwatch.blizzard.com/en-us/">link</a> where you can go and download the game.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column is-one-third">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            I love the the fact that the human brain skips the second "the" in the sentence?
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <h3 class="subtitle is-5">Here are some of my favorite 'did you know's:</h3>
+           
+            <ol>
+              <li>Babies have more bones than adults. Babies start with 350 bones, but as they grow, some fuse together, leaving adults with 206 bones.</li>
+              <li>People are taller in the morning because gravity compresses cartilage and organs throughout the day(You really are 6ft!)</li>
+              <li>The pinky finger is the strongest finger, providing 50% of hand strength.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <h2 class="title is-3 has-text-centered">Favorite Quotes and Books</h2>
+
+  <div class="columns">
+    <div class="column">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            Quotes I Love
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <ul>
+              <li>"Only through conflict do we evolve." - Doomfist</li>
+              <li>"A closed mind is already defeated." - Zenyatta</li>
+              <li>"The universe, it sings to me." - Sigma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            Books I Liked
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <ol>
+              <li><i>The Lightning Thief</i> by Rick Riordan</li>
+              <li><i>The Assault</i> by Harry Mulisch</li>
+              <li><i>The Glass Castle</i> by Jeannette Walls</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>Copyright 2023</p>
+    <p><a href="#">Back to Top</a></p>
+  </div>
+</footer>
+</div>
+
+<script>
+  function toggleMenu() {
+    const navbarMenu = document.getElementById('navbarMenu');
+    navbarMenu.classList.toggle('is-active');
+  }
+</script>
+
+</body>
+</html>

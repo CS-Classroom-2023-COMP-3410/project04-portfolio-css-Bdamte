@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="unquie.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+  <style>
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-container {
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    .contact-form-wrapper {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .contact-form {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive adjustments */
+    @media screen and (min-width: 769px) {
+      .main-container {
+        padding: 2rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="./index.html">
+        Home
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" onclick="toggleMenu()">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="About me.html">About</a>
+        <a class="navbar-item" href="Project.html">Projects</a>
+        <a class="navbar-item" href="ContactMe.html">Contact</a>
+        <a class="navbar-item" href="Gallery.html">Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title has-text-centered">How to Contact?</h1>
+      </div>
+    </div>
+  </section>
+
+  <div class="main-container">
+    <div class="container">
+      <h1 class="title has-text-centered">Contact me here!</h1>
+      <hr>
+      <p class="has-text-centered mb-6">Here is where you guys can contact me</p>
+
+      <div class="columns is-centered">
+        <div class="column is-half-desktop is-three-quarters-tablet is-full-mobile">
+          <div class="contact-form">
+            <h2 class="title is-4">Contact Me</h2>
+            <form>
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" type="text" name="name" placeholder="Your Name">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                  <input class="input" type="email" name="email" placeholder="Your Email">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" name="message" placeholder="Your Message"></textarea>
+                </div>
+              </div>
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                  <button class="button is-light">Cancel</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const navbarMenu = document.getElementById('navbarMenu');
+      navbarMenu.classList.toggle('is-active');
+    }
+  </script>
+</body>
+</html>
